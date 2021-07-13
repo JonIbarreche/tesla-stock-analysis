@@ -18,6 +18,15 @@ function App() {
           Learn React
         </a>
       </header>
+      <body className="App-Body">
+        <p>
+          Este es el body de la aplicacion
+        </p>
+        <text>
+          Texto de ejemplo para la aplicacion
+        </text>
+        <img src={logo} className="App-logo" alt="logo" />
+      </body>
     </div>
   );
 }
