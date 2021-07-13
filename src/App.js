@@ -22,6 +22,9 @@ function App() {
         <p>
           Este es el body de la aplicacion
         </p>
+        <h2>
+          Header 2 ejemplo
+        </h2>
         <text>
           Texto de ejemplo para la aplicacion
         </text>
