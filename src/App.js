@@ -23,8 +23,14 @@ function App() {
           Este es el body de la aplicacion
         </p>
         <h2>
-          Header 2 ejemplo
+          Ejemplo React
         </h2>
+        <h3>
+          Este es un ejemplo de react
+        </h3>
+        <h4>
+          Made by Jon Ibarreche
+        </h4>
         <text>
           Texto de ejemplo para la aplicacion
         </text>
