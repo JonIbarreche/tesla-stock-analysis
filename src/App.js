@@ -1,42 +1,43 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
+
+// Components
+import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
+import Footer from './components/Footer';
+
+// Pages
+import Dashboard from './pages/Dashboard';
+import FinancialData from './pages/FinancialData';
+import MarketSentiment from './pages/MarketSentiment';
+import TechnicalAnalysis from './pages/TechnicalAnalysis';
+import CompetitorComparison from './pages/CompetitorComparison';
+import IntrinsicValue from './pages/IntrinsicValue';
+import InvestmentThesis from './pages/InvestmentThesis';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <body className="App-Body">
-        <p>
-          Este es el body de la aplicacion
-        </p>
-        <h2>
-          Ejemplo React
-        </h2>
-        <h3>
-          Este es un ejemplo de react
-        </h3>
-        <h4>
-          Made by Jon Ibarreche
-        </h4>
-        <text>
-          Texto de ejemplo para la aplicacion
-        </text>
-        <img src={logo} className="App-logo" alt="logo" />
-      </body>
-    </div>
+    <Router>
+      <div className="app">
+        <Navbar />
+        <div className="container">
+          <Sidebar />
+          <main className="content">
+            <Routes>
+              <Route path="/" element={<Dashboard />} />
+              <Route path="/financial-data" element={<FinancialData />} />
+              <Route path="/market-sentiment" element={<MarketSentiment />} />
+              <Route path="/technical-analysis" element={<TechnicalAnalysis />} />
+              <Route path="/competitor-comparison" element={<CompetitorComparison />} />
+              <Route path="/intrinsic-value" element={<IntrinsicValue />} />
+              <Route path="/investment-thesis" element={<InvestmentThesis />} />
+            </Routes>
+          </main>
+        </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
