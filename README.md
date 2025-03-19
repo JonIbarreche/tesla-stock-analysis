@@ -10,16 +10,15 @@ An interactive analysis dashboard providing a comprehensive view of Tesla's mark
 
 ## 📋 Table of Contents
 
-- [Features](#features)
-- [Demo](#demo)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Included Analysis](#included-analysis)
-- [Data Sources](#data-sources)
-- [Improvement Opportunities](#improvement-opportunities)
-- [License](#license)
+- [Features](#-features)
+- [Demo](#-demo)
+- [Technologies Used](#-technologies-used)
+- [Installation](#-installation)
+- [Usage](#️-usage)
+- [Project Structure](#️-project-structure)
+- [Included Analysis](#-included-analysis)
+- [Data Sources](#-data-sources)
+- [License](#-license)
 - [Contributors](#contributors)
 
 ## ✨ Features
@@ -129,14 +128,6 @@ Currently, the application uses simulated data for demonstration. In a real impl
 - Tesla's quarterly and annual reports
 - Real-time market data
 - Sentiment analysis from news sources and social media
-
-## 🚧 Improvement Opportunities
-
-- Integration with real-time financial APIs
-- Implementation of predictive analysis using machine learning
-- Addition of customizable alerts for significant movements
-- Implementation of what-if scenario functionalities
-- Expansion to analyze multiple stocks and create portfolios
 
 ## 📄 License
 
