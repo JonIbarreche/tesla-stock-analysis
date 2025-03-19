@@ -1,70 +1,147 @@
-# Getting Started with Create React App
+# Tesla Stock Analysis Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
+![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)
+![React](https://img.shields.io/badge/React-17.0.2-61DAFB?logo=react)
 
-## Available Scripts
+Un panel de análisis interactivo que proporciona una visión completa del rendimiento de mercado y las perspectivas financieras de Tesla.
 
-In the project directory, you can run:
+![Dashboard](src/img/tesla-1.png)
 
-### `npm start`
+## 📋 Contenido
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Características](#características)
+- [Demo](#demo)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Análisis Incluidos](#análisis-incluidos)
+- [Fuentes de Datos](#fuentes-de-datos)
+- [Oportunidades de Mejora](#oportunidades-de-mejora)
+- [Licencia](#licencia)
+- [Contributors](#contributors)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## ✨ Características
 
-### `npm test`
+- **Dashboard Completo**: Resumen general con métricas clave del rendimiento de Tesla
+- **Visualizaciones Interactivas**: Gráficos y tablas dinámicas para explorar datos financieros
+- **Análisis Multidimensional**: Desde datos financieros hasta análisis técnico y sentimiento de mercado
+- **Diseño Responsivo**: Experiencia de usuario optimizada en dispositivos móviles y de escritorio
+- **Interfaz Intuitiva**: Navegación sencilla entre diferentes secciones de análisis
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Demo
 
-### `npm run build`
+Puedes ver una versión en vivo del panel de análisis en [Tesla Analysis Dashboard](https://your-dashboard-url.com)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 💻 Tecnologías Utilizadas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React**: Framework de frontend para la interfaz de usuario
+- **Recharts**: Biblioteca de visualización de datos
+- **Styled Components**: Estilizado CSS-in-JS
+- **React Router**: Navegación entre páginas
+- **React Icons**: Iconografía expresiva
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📦 Instalación
 
-### `npm run eject`
+Para ejecutar este proyecto localmente, sigue estos pasos:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+# Clonar el repositorio
+git clone https://github.com/yourusername/tesla-stock-analysis.git
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Navegar al directorio del proyecto
+cd tesla-stock-analysis
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Instalar dependencias
+npm install
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Configurar la variable de entorno para compatibilidad con versiones recientes de Node.js
+# En Windows (PowerShell):
+$env:NODE_OPTIONS='--openssl-legacy-provider'
+# En Linux/MacOS:
+export NODE_OPTIONS=--openssl-legacy-provider
 
-## Learn More
+# Iniciar el servidor de desarrollo
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🖥️ Uso
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Una vez que la aplicación esté ejecutándose, navega a `http://localhost:3000` en tu navegador.
 
-### Code Splitting
+El panel de navegación lateral te permite acceder a las diferentes secciones de análisis:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Dashboard: Resumen general
+- Financial Data: Análisis detallado de ingresos, márgenes y finanzas
+- Market Sentiment: Análisis de sentimiento y tendencias de mercado
+- Technical Analysis: Indicadores técnicos y patrones de precio
+- Competitor Comparison: Comparativa con competidores del sector
+- Intrinsic Value: Valoración y análisis fundamental
+- Investment Thesis: Recomendaciones de inversión basadas en análisis integral
 
-### Analyzing the Bundle Size
+## 🏗️ Estructura del Proyecto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+tesla-stock-analysis/
+├── public/               # Archivos estáticos
+├── src/                  # Código fuente
+│   ├── components/       # Componentes reutilizables
+│   ├── pages/            # Páginas de la aplicación
+│   ├── data/             # Datos simulados y utilidades
+│   ├── utils/            # Funciones auxiliares
+│   ├── assets/           # Recursos estáticos
+│   ├── context/          # Contextos de React
+│   ├── hooks/            # Hooks personalizados
+│   └── img/              # Imágenes utilizadas
+└── README.md             # Documentación
+```
 
-### Making a Progressive Web App
+## 📊 Análisis Incluidos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Datos Financieros
+Análisis detallado de ingresos, márgenes de beneficio, balance general y flujo de efectivo.
 
-### Advanced Configuration
+![Financial Data](src/img/tesla-2.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Análisis Técnico
+Gráficos de precios históricos, niveles de soporte/resistencia e indicadores técnicos.
 
-### Deployment
+![Technical Analysis](src/img/tesla-3.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Sentimiento del Mercado
+Evaluación de calificaciones de analistas, objetivos de precio y sentimiento en redes sociales.
 
-### `npm run build` fails to minify
+### Comparación con Competidores
+Análisis comparativo de Tesla frente a otros fabricantes de automóviles y competidores de vehículos eléctricos.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Análisis de Valor Intrínseco
+Valoración utilizando metodología de flujo de caja descontado (DCF) y múltiplos de valoración.
+
+### Tesis de Inversión
+Análisis DAFO, evaluación de riesgos y recomendaciones para diferentes tipos de inversores.
+
+## 📈 Fuentes de Datos
+
+Actualmente, la aplicación utiliza datos simulados para demostración. En una implementación real, los datos se obtendrían de:
+
+- APIs financieras (Yahoo Finance, Alpha Vantage, etc.)
+- Informes trimestrales y anuales de Tesla
+- Datos de mercado en tiempo real
+- Análisis de sentimiento de fuentes de noticias y redes sociales
+
+## 🚧 Oportunidades de Mejora
+
+- Integración con APIs financieras en tiempo real
+- Implementación de análisis predictivo utilizando aprendizaje automático
+- Adición de alertas personalizables para movimientos significativos
+- Implementación de funcionalidades de escenarios hipotéticos (what-if)
+- Expansión para analizar múltiples acciones y crear portafolios
+
+## 📄 Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo LICENSE para más detalles.
+
+## Contributors
+
+- Jon Ibarreche <jon.ibarreche@opendeusto.es>
