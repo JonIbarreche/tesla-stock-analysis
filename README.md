@@ -4,143 +4,143 @@
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)
 ![React](https://img.shields.io/badge/React-17.0.2-61DAFB?logo=react)
 
-Un panel de análisis interactivo que proporciona una visión completa del rendimiento de mercado y las perspectivas financieras de Tesla.
+An interactive analysis dashboard providing a comprehensive view of Tesla's market performance and financial outlook.
 
 ![Dashboard](src/img/tesla-1.png)
 
-## 📋 Contenido
+## 📋 Table of Contents
 
-- [Características](#características)
+- [Features](#features)
 - [Demo](#demo)
-- [Tecnologías Utilizadas](#tecnologías-utilizadas)
-- [Instalación](#instalación)
-- [Uso](#uso)
-- [Estructura del Proyecto](#estructura-del-proyecto)
-- [Análisis Incluidos](#análisis-incluidos)
-- [Fuentes de Datos](#fuentes-de-datos)
-- [Oportunidades de Mejora](#oportunidades-de-mejora)
-- [Licencia](#licencia)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Included Analysis](#included-analysis)
+- [Data Sources](#data-sources)
+- [Improvement Opportunities](#improvement-opportunities)
+- [License](#license)
 - [Contributors](#contributors)
 
-## ✨ Características
+## ✨ Features
 
-- **Dashboard Completo**: Resumen general con métricas clave del rendimiento de Tesla
-- **Visualizaciones Interactivas**: Gráficos y tablas dinámicas para explorar datos financieros
-- **Análisis Multidimensional**: Desde datos financieros hasta análisis técnico y sentimiento de mercado
-- **Diseño Responsivo**: Experiencia de usuario optimizada en dispositivos móviles y de escritorio
-- **Interfaz Intuitiva**: Navegación sencilla entre diferentes secciones de análisis
+- **Comprehensive Dashboard**: General overview with key performance metrics for Tesla
+- **Interactive Visualizations**: Dynamic charts and tables to explore financial data
+- **Multidimensional Analysis**: From financial data to technical analysis and market sentiment
+- **Responsive Design**: Optimized user experience on mobile and desktop devices
+- **Intuitive Interface**: Simple navigation between different analysis sections
 
 ## 🚀 Demo
 
-Puedes ver una versión en vivo del panel de análisis en [Tesla Analysis Dashboard](https://your-dashboard-url.com)
+You can see a live version of the analysis dashboard at [Tesla Analysis Dashboard](https://your-dashboard-url.com)
 
-## 💻 Tecnologías Utilizadas
+## 💻 Technologies Used
 
-- **React**: Framework de frontend para la interfaz de usuario
-- **Recharts**: Biblioteca de visualización de datos
-- **Styled Components**: Estilizado CSS-in-JS
-- **React Router**: Navegación entre páginas
-- **React Icons**: Iconografía expresiva
+- **React**: Frontend framework for the user interface
+- **Recharts**: Data visualization library
+- **Styled Components**: CSS-in-JS styling
+- **React Router**: Page navigation
+- **React Icons**: Expressive iconography
 
-## 📦 Instalación
+## 📦 Installation
 
-Para ejecutar este proyecto localmente, sigue estos pasos:
+To run this project locally, follow these steps:
 
 ```bash
-# Clonar el repositorio
-git clone https://github.com/yourusername/tesla-stock-analysis.git
+# Clone the repository
+git clone https://github.com/JonIbarreche/tesla-stock-analysis.git
 
-# Navegar al directorio del proyecto
+# Navigate to the project directory
 cd tesla-stock-analysis
 
-# Instalar dependencias
+# Install dependencies
 npm install
 
-# Configurar la variable de entorno para compatibilidad con versiones recientes de Node.js
-# En Windows (PowerShell):
+# Set the environment variable for compatibility with recent Node.js versions
+# On Windows (PowerShell):
 $env:NODE_OPTIONS='--openssl-legacy-provider'
-# En Linux/MacOS:
+# On Linux/MacOS:
 export NODE_OPTIONS=--openssl-legacy-provider
 
-# Iniciar el servidor de desarrollo
+# Start the development server
 npm start
 ```
 
-## 🖥️ Uso
+## 🖥️ Usage
 
-Una vez que la aplicación esté ejecutándose, navega a `http://localhost:3000` en tu navegador.
+Once the application is running, navigate to `http://localhost:3000` in your browser.
 
-El panel de navegación lateral te permite acceder a las diferentes secciones de análisis:
+The side navigation panel allows you to access the different analysis sections:
 
-- Dashboard: Resumen general
-- Financial Data: Análisis detallado de ingresos, márgenes y finanzas
-- Market Sentiment: Análisis de sentimiento y tendencias de mercado
-- Technical Analysis: Indicadores técnicos y patrones de precio
-- Competitor Comparison: Comparativa con competidores del sector
-- Intrinsic Value: Valoración y análisis fundamental
-- Investment Thesis: Recomendaciones de inversión basadas en análisis integral
+- Dashboard: General overview
+- Financial Data: Detailed analysis of revenue, margins, and finances
+- Market Sentiment: Analysis of sentiment and market trends
+- Technical Analysis: Technical indicators and price patterns
+- Competitor Comparison: Comparison with sector competitors
+- Intrinsic Value: Valuation and fundamental analysis
+- Investment Thesis: Investment recommendations based on comprehensive analysis
 
-## 🏗️ Estructura del Proyecto
+## 🏗️ Project Structure
 
 ```
 tesla-stock-analysis/
-├── public/               # Archivos estáticos
-├── src/                  # Código fuente
-│   ├── components/       # Componentes reutilizables
-│   ├── pages/            # Páginas de la aplicación
-│   ├── data/             # Datos simulados y utilidades
-│   ├── utils/            # Funciones auxiliares
-│   ├── assets/           # Recursos estáticos
-│   ├── context/          # Contextos de React
-│   ├── hooks/            # Hooks personalizados
-│   └── img/              # Imágenes utilizadas
-└── README.md             # Documentación
+├── public/               # Static files
+├── src/                  # Source code
+│   ├── components/       # Reusable components
+│   ├── pages/            # Application pages
+│   ├── data/             # Simulated data and utilities
+│   ├── utils/            # Helper functions
+│   ├── assets/           # Static resources
+│   ├── context/          # React contexts
+│   ├── hooks/            # Custom hooks
+│   └── img/              # Images used
+└── README.md             # Documentation
 ```
 
-## 📊 Análisis Incluidos
+## 📊 Included Analysis
 
-### Datos Financieros
-Análisis detallado de ingresos, márgenes de beneficio, balance general y flujo de efectivo.
+### Financial Data
+Detailed analysis of revenue, profit margins, balance sheet, and cash flow.
 
 ![Financial Data](src/img/tesla-2.png)
 
-### Análisis Técnico
-Gráficos de precios históricos, niveles de soporte/resistencia e indicadores técnicos.
+### Technical Analysis
+Historical price charts, support/resistance levels, and technical indicators.
 
 ![Technical Analysis](src/img/tesla-3.png)
 
-### Sentimiento del Mercado
-Evaluación de calificaciones de analistas, objetivos de precio y sentimiento en redes sociales.
+### Market Sentiment
+Evaluation of analyst ratings, price targets, and social media sentiment.
 
-### Comparación con Competidores
-Análisis comparativo de Tesla frente a otros fabricantes de automóviles y competidores de vehículos eléctricos.
+### Competitor Comparison
+Comparative analysis of Tesla against other automakers and electric vehicle competitors.
 
-### Análisis de Valor Intrínseco
-Valoración utilizando metodología de flujo de caja descontado (DCF) y múltiplos de valoración.
+### Intrinsic Value Analysis
+Valuation using discounted cash flow (DCF) methodology and valuation multiples.
 
-### Tesis de Inversión
-Análisis DAFO, evaluación de riesgos y recomendaciones para diferentes tipos de inversores.
+### Investment Thesis
+SWOT analysis, risk assessment, and recommendations for different investor types.
 
-## 📈 Fuentes de Datos
+## 📈 Data Sources
 
-Actualmente, la aplicación utiliza datos simulados para demostración. En una implementación real, los datos se obtendrían de:
+Currently, the application uses simulated data for demonstration. In a real implementation, data would be obtained from:
 
-- APIs financieras (Yahoo Finance, Alpha Vantage, etc.)
-- Informes trimestrales y anuales de Tesla
-- Datos de mercado en tiempo real
-- Análisis de sentimiento de fuentes de noticias y redes sociales
+- Financial APIs (Yahoo Finance, Alpha Vantage, etc.)
+- Tesla's quarterly and annual reports
+- Real-time market data
+- Sentiment analysis from news sources and social media
 
-## 🚧 Oportunidades de Mejora
+## 🚧 Improvement Opportunities
 
-- Integración con APIs financieras en tiempo real
-- Implementación de análisis predictivo utilizando aprendizaje automático
-- Adición de alertas personalizables para movimientos significativos
-- Implementación de funcionalidades de escenarios hipotéticos (what-if)
-- Expansión para analizar múltiples acciones y crear portafolios
+- Integration with real-time financial APIs
+- Implementation of predictive analysis using machine learning
+- Addition of customizable alerts for significant movements
+- Implementation of what-if scenario functionalities
+- Expansion to analyze multiple stocks and create portfolios
 
-## 📄 Licencia
+## 📄 License
 
-Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo LICENSE para más detalles.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Contributors
 
